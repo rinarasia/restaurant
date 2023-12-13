@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #CCE6F4;
+  }
+  
+  #content {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 12fr 1fr;
+  }
+  
+  .navBar {
+    background: black;
+    box-shadow: 0px 1px 40px gray;
+    color: white;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 5fr 1fr 5fr;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .logoTitle {
+    justify-self: end;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  nav {
+    justify-self: end;
+    padding-right: 10px;
+  }
+  
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    gap: 10px;
+  }
+  
+  nav ul,
+  nav li {
+    font-size: 16px;
+  }
+  
+  nav li:hover {
+    text-decoration: underline;
+  }
+  
+  .main { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .homePage {
+      background-image: url('https://cdn.discordapp.com/attachments/995431151084773486/1181961287593373696/fez01._veg_pizzas_spinning_cheese_motion_lots_of_pizza_action_w_af3f31bb-42a6-408d-b2f4-8a28b718d537.png?ex=6582f63a&is=6570813a&hm=9f6cce2a33693ea090f321ce8c024eb33b30672713db595b86fa894f6ed2ea3f&');
+    background-position: center;
+  }
+  
+  .container {
+    display: flex;
+    gap: 100px;
+  }
+  
+  h2 {
+    text-shadow: 1px 1px 5px black;
+    color: white;
+    font-size: 70px; 
+  }
+  
+  h2:hover {
+    transform: translateY(-20%);
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: underline dotted #00000000;
+  }
+  
+  .footer {    
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background: black;
+  }
+  
