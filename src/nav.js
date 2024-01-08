@@ -9,7 +9,7 @@
     logo.classList.add('logo');
     logo.src = "https://cdn.discordapp.com/attachments/1115776946777882686/1184259042026213446/cheflogo2-removebg-preview.png";
     
-    const logoTitle = document.createElement('h4');
+    const logoTitle = document.createElement('h2');
     logoTitle.classList.add('logoTitle');
     logoTitle.textContent = "Artisanal Slices";
     
@@ -18,13 +18,17 @@
     const navItems = document.createElement('ul');
     
     const homeBtn = document.createElement('li');
-    homeBtn.textContent = "Home"
+    homeBtn.classList.add("home");
+    homeBtn.setAttribute('id', 'home');
+    homeBtn.textContent = "Home";
     
     const menuBtn = document.createElement('li');
-    menuBtn.textContent = "Menu"
+    menuBtn.classList.add("menu");
+    menuBtn.textContent = "Menu";
     
     const contactBtn = document.createElement('li');
-    contactBtn.textContent = "Contact"
+    contactBtn.classList.add("contact");
+    contactBtn.textContent = "Contact";
   
     navItems.append(homeBtn, menuBtn, contactBtn);
   

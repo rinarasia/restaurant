@@ -7,6 +7,7 @@
   
   #content {
     width: 100vw;
+    min-width: 885px;
     height: 100vh;
     display: grid;
     grid-template-rows: 1fr 12fr 1fr;
@@ -26,6 +27,7 @@
   
   .logoTitle {
     justify-self: end;
+    font-style: italic;
   }
   
   .logo {
@@ -34,7 +36,7 @@
   
   nav {
     justify-self: end;
-    padding-right: 10px;
+    padding-right: 20px;
   }
   
   nav ul {
@@ -46,7 +48,7 @@
   
   nav ul,
   nav li {
-    font-size: 16px;
+    font-size: 24px;
   }
   
   nav li:hover {
@@ -55,32 +57,119 @@
   
   .main { 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   
   .homePage {
-      background-image: url('https://cdn.discordapp.com/attachments/995431151084773486/1181961287593373696/fez01._veg_pizzas_spinning_cheese_motion_lots_of_pizza_action_w_af3f31bb-42a6-408d-b2f4-8a28b718d537.png?ex=6582f63a&is=6570813a&hm=9f6cce2a33693ea090f321ce8c024eb33b30672713db595b86fa894f6ed2ea3f&');
+    background-image: url('https://cdn.discordapp.com/attachments/995431151084773486/1181961287593373696/fez01._veg_pizzas_spinning_cheese_motion_lots_of_pizza_action_w_af3f31bb-42a6-408d-b2f4-8a28b718d537.png?ex=6582f63a&is=6570813a&hm=9f6cce2a33693ea090f321ce8c024eb33b30672713db595b86fa894f6ed2ea3f&');
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
-  
+
+  .menuPage {
+    background-color: #472708;
+    background-image: url('https://cdn.discordapp.com/attachments/1115776946777882686/1182369995007733800/internalexile_aerial_view_one_side_of_a_empty_golden_brown_wood_87c87d57-1b8f-4283-9686-fd499ca71937.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    box-shadow: inset 10px 1em 1em black;
+  }
+
+  .contactPage {
+    background-image: url('https://cdn.discordapp.com/attachments/1115776946777882686/1183932540533362719/internalexile_aerial_view_empty_golden_brown_wooden_chopping_bo_af97b9f6-f604-4746-9132-d50abbdbcb0c.png');
+    /* https://cdn.discordapp.com/attachments/1115776946777882686/1183922181026099230/internalexile_aerial_view_empty_golden_brown_wooden_chopping_bo_21decd4b-4074-448a-a627-f931b9dfea03.png*/
+    background-size: cover;
+    background-position: top;
+    margin-top: -5px;
+    box-shadow: inset 10px 1em 1em black;
+  }
+
   .container {
     display: flex;
-    gap: 100px;
+    gap: 150px;
+  }
+
+  .productContainer {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    gap: 20px;
   }
   
-  h2 {
-    text-shadow: 1px 1px 5px black;
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .product:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  img {
+    width: 10rem;
+    border: 3px white dotted;
+    border-radius: 30px;
+    background: radial-gradient(#6E2D2D, black);
+  }
+  
+  img:hover {
+    filter: drop-shadow(0 0 0.5rem white);
+  }
+  
+  h1 {
+    text-shadow: 3px 6px 5px black;
     color: white;
-    font-size: 70px; 
+    font-size: 70px;
   }
   
-  h2:hover {
+  h1:hover {
     transform: translateY(-20%);
     transition: 0.5s;
     cursor: pointer;
     text-decoration: underline dotted #00000000;
   }
+
+  h2 {
+    color: white;
+    text-shadow:  3px 6px 5px black;
+    text-align: center;
+    padding: 10px;
+    font-size: 34px;
+  }
+
+  h3 {
+    text-shadow: 1px 1px 5px black;
+    color: white;
+    font-size: 44px; 
+  }
+  
+  h4 {
+    color: #efefef;
+    text-shadow:  1px 1px 3px black;
+    font-size: 24px;
+  }
+  
+  span {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(252, 223, 209, 0.5);
+    color: black;
+  }
+  
   
   .footer {    
     color: white;
